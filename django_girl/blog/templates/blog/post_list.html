@@ -21,12 +21,13 @@
         LIKES JAPANESEE CULTURE/ALTITUDE/DISCIPLINE IS NOT LABELED AS A WEEBO.</p>
     <p>published: 12.02.2019, 09:55</p>
 </div>
+
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a> </h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+<div>
+    <p>published: {{ post.published_date }}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
 {% endfor %}
 </body>
 </html>
