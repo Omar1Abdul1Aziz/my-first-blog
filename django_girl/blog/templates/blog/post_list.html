@@ -12,21 +12,16 @@
 <div>
     <h2><a href="">My first post</a></h2>
     <p>THE GREAT WIYONO. THE GREAT WIYONO IS A LEGEND MAN, HE CAN CODE ANYTHING YOU WANT AS LONG AS YOU IDIOT, LOL</p>
-    <p>published: 12.02.2019, 09:50</p>
-</div>
-
-<div>
-    <h2><a href="">My second post</a></h2>
-    <p>JAPAN IS A GREAT PLACE AND GREAT DISCIPLINE, I LIKE JAPAN ONLY BECAUSE THEY'RE DISCIPLINE, AND BTW, SOMEONE WHO
-        LIKES JAPANESEE CULTURE/ALTITUDE/DISCIPLINE IS NOT LABELED AS A WEEBO.</p>
-    <p>published: 12.02.2019, 09:55</p>
+    <p>published: {{ post.published_date }}</p>
 </div>
 
 {% for post in posts %}
 <div>
-    <p>published: {{ post.published_date }}</p>
-    <h2><a href="https://www.pondokit.com">{{ post.title }}</a></h2>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>JAPAN IS A GREAT PLACE AND GREAT DISCIPLINE, I LIKE JAPAN ONLY BECAUSE THEY'RE DISCIPLINE, AND BTW, SOMEONE WHO
+        LIKES JAPANESEE CULTURE/ALTITUDE/DISCIPLINE IS NOT LABELED AS A WEEBO.
     <p>{{ post.text|linebreaksbr }}</p>
+    <p>published: 12.02.2019, 09:55</p>
 </div>
 {% endfor %}
 
