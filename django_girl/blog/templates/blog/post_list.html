@@ -15,15 +15,18 @@
     <p>published: {{ post.published_date }}</p>
 </div>
 
-{% for post in posts %}
+
 <div>
-    <h2><a href="">{{post.title}}</a></h2>
+    {% for post in posts %}
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>JAPAN IS A GREAT PLACE AND GREAT DISCIPLINE, I LIKE JAPAN ONLY BECAUSE THEY'RE DISCIPLINE, AND BTW, SOMEONE WHO
         LIKES JAPANESEE CULTURE/ALTITUDE/DISCIPLINE IS NOT LABELED AS A WEEBO.
-    <p>{{post.text|linebreaksbr}}</p>
-    <p>published: {{post.published_date}}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
+    <p>published: {{ post.published_date }}</p>
+    {% endfor %}
+
 </div>
-{% endfor %}
+
 
 </body>
 </html>
