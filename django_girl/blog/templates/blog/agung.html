@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>THE GREAT WIYONO!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style class="text/css">
+  header,
+  section,
+  footer,
+  aside,
+  nav,
+  article,
+  figure,
+  figcaption {
+    display: block;
+  }
+
+  body {
+    color: #666666;
+    background-color: #f9f8f6;
+    background-image: url("static/blog/Wood.jpeg");
+    background-position: center;
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin: 0px;
+  }
+
+  .wrapper {
+    width: 950px;
+    margin: 20px auto 20px auto;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+  }
+
+  header {
+    height: 160px;
+    background-image: url("static/blog/Great.jpg");
+  }
+
+  h1 {
+    text-indent: -9999px;
+    width: 940px;
+    height: 130px;
+    margin: 0px;
+  }
+
+  nav,
+  footer {
+    clear: both;
+    color: #ffffff;
+    background-color: #aeaca8;
+    height: 30px;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+
+  nav li {
+    display: inline;
+    margin-right: 40px;
+  }
+
+  nav li a {
+    color: #ffffff;
+  }
+
+  nav li a:hover,
+  nav li a.current {
+    color: #000000;
+  }
+
+  section.courses {
+    float: left;
+    width: 659px;
+    border-right: 1px solid #eeeeee;
+  }
+
+  article {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+  }
+
+  hgroup {
+    margin-top: 40px;
+  }
+
+  figure {
+    float: left;
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #eeeeee;
+  }
+
+  figcaption {
+    font-size: 90%;
+    text-align: left;
+  }
+
+  aside {
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+  }
+
+  aside section a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  aside section a:hover {
+    color: #985d6a;
+    background-color: #efefef;
+  }
+
+  a {
+    color: #de6581;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: normal;
+  }
+
+  h2 {
+    margin: 10px 0px 5px 0px;
+    padding: 0px;
+  }
+
+  h3 {
+    margin: 0px 0px 10px 0px;
+    color: #de6581;
+  }
+
+  aside h2 {
+    padding: 30px 0px 10px 0px;
+    color: #de6581;
+  }
+
+  footer {
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;
+  }
+</style>
+
+<body>
+<div class="wrapper">
+    <header>
+        <h1>LEGEND CALLED "THE GREAT WIYONO"</h1>
+        <nav>
+            <ul>
+                <li><a> HOME</a></li>
+                <li><a> HIS HONOR</a></li>
+                <li><a> GREAT MOMMENT</a></li>
+                <li><a> ABOUT</a></li>
+                <li><a> CONTACT</a></li>
+                <li><a target="_blank" title="Create A New Account" href="{% url 'Register' %}">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="HONOR">
+        <article>
+            <figure>
+                {% load static %}<img src="{% static "blog/Shield_Man.jpeg" %}" width="280px" height="210px" alt="Wiyono" />
+                <figcaption>Agung Wiyono Behind Shield</figcaption>
+            </figure>
+            <hgroup>
+                <h2>JANUARY 1st.</h2>
+            </hgroup>
+            <p><i>January 1st</i> Was a Great War Where <b>THE GREAT WIYONO</b> Got Raining Arrows from the Enemy.</p>
+        </article>
+        <article>
+            <figure>
+                {% load static %}<img src="{% static "/blog/spartan.jpeg" %}" width="280px" height="210px" alt="Allies" />
+                <figcaption>Ally at War</figcaption>
+            </figure>
+            <hgroup>
+                <h2>MARCH 20th.</h2>
+            </hgroup>
+            <p><i>March 20th.</i> Where the Allies and <b>THE GREAT WIYONO</b> fought to Defend Their Home from the Enemy.</p>
+        </article>
+        <article>
+            <figure>
+                {% load static %}<img src="{% static "/blog/muslim.jpeg" %}" width="280px" height="210px" alt="Chassing" />
+                <figcaption>Chassing the Enemy</figcaption>
+            </figure>
+            <hgroup>
+                <h2>JULY 15th.</h2>
+            </hgroup>
+            <p><i>July 15th.</i> Is when allies won the War, as You can see, the Allies are chassing the <b>Enemy</b> Back to Their Home.</p>
+        </article>
+    </section>
+    <footer>
+        &copy; 2018: The Great Wiyono History
+    </footer>
+</div>
+</body>
+
+</html>
